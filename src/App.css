@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: blueviolet;
+}
+.search {
+  min-width: 15rem;
+  width: 40vh;
+  background-color: #e1ebfd;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  align-self: center;
+  height: 2.5rem;
+  outline: none;
+}
+.add-btn {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #e1ebfd;
+  background-color: #271c6c;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+margin-left: 1rem;
+  font-size: 1.5rem;
+
+}
+.container-display {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  list-style-type: none;
+  margin-left: 5%;
+}
+.display-btns {
+  margin-top: 20px;
+  margin-bottom: 2rem;
+}
+.display-btns > button {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+textarea:disabled {
+  border: none;
+  background-color: transparent;
+}
+.all-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.display-btns button:not(:last-child) {
+  margin-right: 1rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background: rgb(180, 182, 218);
+  position: relative;
+  background: radial-gradient(
+    circle,
+    hsla(237, 34%, 78%, 0.9, )0%,
+    hsla(219, 88%, 94%, 0.9,)100%
+  );
+  margin: 0 1rem 1rem 0;
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+}
+.App h1{
+  display: inline;
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 5px #433aa8,3px -1px 5px #271c6c;
+}
+.btns-actions{
+  position: absolute;
+  bottom: .5rem;
+  right: 1rem;
+}
+
+.btns-actions button{
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+.btns-actions button:hover{
+  outline: none;
+  
+  transform: scale(1.5);
+}
+.close-btn{
+  color: red;
+  font-size: 2rem;
+}
+li{
+  height: 100px;
+  border-radius: 5px;
+}
+textarea:focus{
+  outline: none;
+}
+.done{
+  position: absolute;
+  right: 5px;
+  color: #e1ebfd;
+  background-color: #271c6c;
+  border-radius: 50%;
+  font-size: .8rem;
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+}
